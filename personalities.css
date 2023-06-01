@@ -1,0 +1,241 @@
+/* Google Fonts(Poppins) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+body{
+    background: red;
+    color: white;
+}
+
+.wrapper{
+    overflow: hidden;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: red;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.icon{
+    display: none;
+    cursor: pointer;
+    height: 20px;
+}
+
+
+.navbar a{
+    font-size: 18px;
+    color: red;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: black;
+}
+
+/* Political Leaders */
+
+.heading{
+    margin-top: 5%;
+}
+
+.heading h3{
+    display: flex;
+    letter-spacing: 2px;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 600;
+    justify-content: center;
+}
+
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.card {
+  box-shadow: 0 4px 8px 0 red;
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.card p{
+    padding-top: 2%;
+    text-align: justify;
+    font-size: 18px;
+}
+
+
+.card h3{
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration-style: solid;
+    color: black;
+}
+
+/* Footer */
+
+.The-end{
+    background-color: white;
+    padding-bottom: 6%;
+}
+
+.footer{
+    padding-top: 5%;
+    color: red;
+    margin-top: 35px;
+    padding-left: 11%;
+    padding-right: 9%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+}
+
+.logo1{
+    position: relative;
+    font-size: 25px;
+    color: red;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo1 a{
+    color: red;
+}
+
+
+.navbar1 a{
+    font-size: 18px;
+    color: red;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 35px;
+    transition: .3s;
+}
+
+
+.navbar1 a:hover,
+.navbar1 a.active{
+    color: black;
+}
+
+.The-end .ce{
+    display: flex;
+}
+
+.The-end .contact{
+    padding-left: 9rem;
+    padding-top: 6%;
+    color: red;
+}
+
+.The-end .email{
+    width: 100vw;
+    padding-top: 6%;
+    padding-left: 22rem;
+}
+
+.The-end .contact h4{
+    padding-bottom: 2%;
+}
+
+
+.email input[type=submit]{
+    background-color: black;
+    color: red;
+    padding: 9px 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.email input[type=email]{
+    padding: 7px 105px;
+}
+
+.email label[for=email]{
+    color: red;
+}
+
+.social-media{
+    display: flex;
+    padding-top: 6%;
+    padding-left: 7.5rem;
+}
+
+.social-media a{
+    padding-left: 2%;
+}
+
+/* Keyframes and Media Query */
+
+@keyframes showRight{
+    100%{
+        width: 0;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .The-end{
+        display: none;
+    }
+
+    .heading h3{
+        font-size: 26px;
+    }
+
+    .card h3{
+        font-size: 20px;
+    }
+
+    .card p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:870px){
+    .cards{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media  screen and  (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+    .icon {
+        display: block;
+    }
+}
+

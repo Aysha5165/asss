@@ -1,0 +1,599 @@
+/* Google Fonts(Poppins) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    overflow-x: hidden;
+}
+
+body{
+    background: red;
+    color: white;
+}
+
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* .wrapper{
+    overflow: hidden;
+} */
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: red;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.navbar a{
+    font-size: 18px;
+    color: red;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: black;
+}
+
+.icon{
+    display: none;
+    cursor: pointer;
+    height: 20px;
+}
+
+
+.home{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 127vh;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home .home-left{
+    max-width: 600px;
+}
+
+.home-left h1{
+    position: relative;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.home-left h3{
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+}
+
+
+.home-left p{
+    position: relative;
+    margin-top: 2%;
+    font-size: 16px;
+}
+
+.home-left .btn-box{
+    position: relative;
+    width: 345px;
+    height: 50px;
+    margin-top: 5%;
+}
+
+
+.btn-box a{
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    background: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn-box a:hover{
+    color: black;
+}
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: black;
+}
+ 
+
+.home-right img{
+    height: 100vh;
+}
+
+
+/*Hobbies */
+
+
+.Hobbies .heading h3{
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+
+
+/* Six Section */
+
+.pic1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 3%;
+    margin-left: 1.5%;
+    margin-bottom: 0.5%;
+}
+
+
+
+.pic1 #one{
+    border-radius: 5%;
+    width: 70%;
+}
+
+.pic1 #two{
+    border-radius: 5%;
+    width: 70%;
+}
+
+.pic1 #three{
+    border-radius: 5%;
+    width: 70%;
+}
+
+.pic1 #four{
+    border-radius: 5%;
+    width: 70%;
+    height: 94%;
+}
+
+/* Skills */
+
+.wrapper{
+    width: 50%;
+    min-width: 570px;
+    position: relative;
+    left: 26%;
+}
+.container{
+    width: 100%;
+    padding: 30px 30px 50px;
+    background-color: red;
+    backdrop-filter: blur(10px);
+} 
+
+.container h3{
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+.skills:not(:last-child){
+    margin-bottom: 30px;
+}
+.details{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.bar{
+    position: relative;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.bar div{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+/* Navbar */
+
+.sec-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.featured-pro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    width: 90%;
+}
+
+
+.btns {
+    background-color: black;
+    border: 2px solid black;
+}
+
+.btns:hover {
+    background-color: black;
+    border: 2px white;
+}
+
+/* Cards */
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.card {
+  box-shadow: 0 4px 8px 0 red;
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.card p{
+    text-align: justify;
+}
+
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: black;
+    border-radius: 2px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 5%;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+/* Footer */
+
+.The-end{
+    background-color: white;
+    padding-bottom: 6%;
+}
+
+.footer{
+    padding-top: 5%;
+    color: red;
+    margin-top: 35px;
+    padding-left: 11%;
+    padding-right: 9%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+}
+
+.logo1{
+    position: relative;
+    font-size: 25px;
+    color: red;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo1 a{
+    color: red;
+}
+
+
+.navbar1 a{
+    font-size: 18px;
+    color: red;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 35px;
+    transition: .3s;
+}
+
+
+.navbar1 a:hover,
+.navbar1 a.active{
+    color: black;
+}
+
+.The-end .ce{
+    display: flex;
+}
+
+.The-end .contact{
+    padding-left: 9rem;
+    padding-top: 6%;
+    color: red;
+}
+
+.The-end .email{
+    width: 100vw;
+    padding-top: 6%;
+    padding-left: 22rem;
+}
+
+.The-end .contact h4{
+    padding-bottom: 2%;
+}
+
+
+.email input[type=submit]{
+    background-color: black;
+    color: red;
+    padding: 9px 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.email input[type=email]{
+    padding: 7px 105px;
+}
+
+.email label[for=email]{
+    color: red;
+}
+
+.social-media{
+    display: flex;
+    padding-top: 6%;
+    padding-left: 7.5rem;
+}
+
+.social-media a{
+    padding-left: 2%;
+}
+
+/* Animations and Keyframs */
+
+#html-bar{
+    animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 90%;
+    }
+}
+#css-bar{
+    animation: css-fill 2s forwards;
+}
+@keyframes css-fill{
+    100%{
+        width: 75%;
+    }
+}
+#Cpp-bar{
+    animation: Cpp-fill 2s forwards;
+}
+@keyframes Cpp-fill {
+    100%{
+        width: 72%;
+    }
+}
+#Python-bar{
+    animation: Python-fill 2s forwards;
+}
+@keyframes Python-fill{
+    100%{
+        width: 58%;
+    }
+} 
+
+@keyframes showRight{
+    100%{
+        width: 0;
+    }
+}
+
+/* Media Query */
+
+@media screen and (max-width:725px){
+    .pic1{
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        margin-left: 15%;
+    }
+    #one{
+        margin-bottom: 2%;
+    }
+
+    #two{
+        margin-bottom: 2%;
+    }
+
+    #three{
+        margin-bottom: 2%;
+    }
+
+    #four{
+        margin-bottom: 2%;
+    }
+
+    .pics{
+        text-align: center;
+    }
+
+    .Hobbies .heading h3{
+        font-size: 20px;
+    }
+
+    .container{
+        width: 77%;
+        padding: 30px 0px 162px;
+    }
+}
+
+@media  screen and  (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+    .icon {
+        display: block;
+    }
+    /* .trust {
+        flex-direction: column;
+    }
+    .para {
+        grid-template-columns: 1fr;
+    } */
+}
+
+@media screen and (max-width:950px){
+    .cards{
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        margin-bottom: 2%;
+    }
+    .card{
+        margin-bottom: 2%;
+    }
+
+    .The-end{
+        display: none;
+    }
+
+    .wrapper{
+        left: 13%;
+    }
+
+    .home-left h1{
+        font-size: 25px;
+    }
+
+    .home-left p{
+        font-size: 12px;
+    }
+
+    .home-left h3{
+        font-size: 20px;
+    }
+
+    .home-right img{    
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width:550px) and (min-width:350px){
+    .home-left h1{
+        font-size: 18px;
+    }
+
+    .home-left p{
+        font-size: 9px;
+        text-align: justify;
+    }
+
+    .home-left h3{
+        font-size: 15px;
+    }
+
+    .home-right img{    
+        height: 40vh;
+    }
+    
+    .home{
+        margin-top: -15%;
+    }
+
+    .hob{
+        margin-top: -30%;
+    }
+
+    .container{
+        width: 62%;
+        padding: 30px 0px 53px;
+    }
+}
+
+@media screen and (max-width:390px){
+    .home-left h1{
+        font-size: 13px;
+    }
+
+    .home-left p{
+        font-size: 7px;
+        text-align: justify;
+    }
+
+    .home-left h3{
+        font-size: 12px;
+    }
+
+    .home-right img{    
+        height: 40vh;
+        margin-left: 0%;
+    }
+    
+    .home{
+        margin-top: -15%;
+    }
+
+    .hob{
+        margin-top: -30%;
+    }
+
+    .container{
+        width: 50%;
+        padding: 30px 0px 53px;
+    }
+
+    .btn-box a{
+        width: 98px;
+        font-size: 10px;
+    }
+
+    .container h3{
+        margin-bottom: 9px;
+        letter-spacing: 1px;
+        text-align: center;
+        font-size: 23px;
+    }
+
+}
